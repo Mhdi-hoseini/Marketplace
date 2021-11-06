@@ -1,0 +1,132 @@
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #2b252c;
+  grid-template-columns: repeat(12, 8.33vw);
+  grid-template-rows: repeat(12, 8.33vh);
+}
+@media only screen and (max-width: 320px) {
+  body {
+    height: 200vh;
+    padding-bottom: 5%;
+  }
+  nav {
+    grid-area: 2 / 2 / span 1 / span 10;
+    font-size: 12px;
+  }
+  main {
+    grid-area: 3 / 2 / span 8 / span 10;
+  }
+  main h1 {
+    font-size: 36px;
+  }
+  aside {
+    height: 60%;
+    grid-area: 13 / 2 / span 1 / span 10;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  body {
+    height: 200vh;
+    padding-bottom: 5%;
+  }
+  nav {
+    grid-area: 2 / 2 / span 1 / span 10;
+  }
+  main {
+    grid-area: 4 / 2 / span 7 / span 10;
+  }
+  main h1 {
+    font-size: 48px;
+  }
+  aside {
+    height: 90%;
+    grid-area: 13 / 2 / span 1 / span 10;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body {
+    height: 200vh;
+    padding-bottom: 10%;
+  }
+  nav {
+    grid-area: 2 / 2 / span 1 / span 10;
+  }
+  main {
+    grid-area: 4 / 2 / span 6 / span 10;
+  }
+  main h1 {
+    font-size: 48px;
+  }
+  aside {
+    grid-area: 12 / 3 / span 2 / span 8;
+  }
+  aside img {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  nav {
+    grid-area: 2 / 2 / span 1 / span 5;
+  }
+  main {
+    grid-area: 3 / 2 / span 8 / span 5;
+  }
+  main h1 {
+    font-size: 56px;
+  }
+  aside {
+    grid-area: 2 / 8 / span 10 / span 4;
+  }
+  aside img {
+    height: 80%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    grid-area: 2 / 2 / span 1 / span 4;
+  }
+  main {
+    grid-area: 3 / 2 / span 8 / span 4;
+  }
+  main h1 {
+    font-size: 56px;
+  }
+  aside {
+    grid-area: 2 / 8 / span 10 / span 4;
+  }
+  aside img {
+    height: 92%;
+  }
+}
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+  nav {
+    grid-area: 2 / 2 / span 1 / span 4;
+  }
+  main {
+    grid-area: 3 / 2 / span 8 / span 4;
+  }
+  aside {
+    grid-area: 2 / 9 / span 10 / span 3;
+  }
+  aside img {
+    height: 80%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  nav {
+    grid-area: 2 / 2 / span 1 / span 4;
+  }
+  main {
+    grid-area: 3 / 2 / span 8 / span 4;
+  }
+  aside {
+    grid-area: 2 / 9 / span 10 / span 3;
+  }
+  aside img {
+    height: 88%;
+  }
+}
