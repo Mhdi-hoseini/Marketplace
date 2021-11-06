@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+aside {
+  display: flex;
+  border-radius: 15px;
+  flex-flow: column;
+  justify-content: space-around;
+  font-family: "Quicksand", sans-serif;
+  animation: asidebg 18s infinite;
+}
+aside a {
+  padding: 15px;
+  border-radius: 15px;
+  margin-right: 15px;
+  align-self: flex-end;
+  color: #2b252c;
+  background-color: #faf7fc;
+  text-decoration: none;
+}
+aside div:first-of-type {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+aside img:nth-of-type(1) {
+  transform: translateX(-60%) scale(0.7);
+  animation: imgl 18s infinite ease;
+}
+aside img:nth-of-type(2) {
+  transform: translateX(50%) scale(1);
+  animation: imgc 18s infinite ease;
+}
+aside img:nth-of-type(3) {
+  transform: translateX(160%) scale(0.7);
+  animation: imgr 18s infinite ease;
+}
+aside img {
+  position: absolute;
+  width: 50%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+aside div:last-of-type {
+  align-self: center;
+}
+aside span:nth-child(1) {
+  animation: spanl 18s infinite ease;
+}
+aside span:nth-child(2) {
+  animation: spanc 18s infinite ease;
+}
+aside span:nth-child(3) {
+  animation: spanr 18s infinite ease;
+}
+aside span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #dac2f0;
+  background-color: #9d77cb;
+}
+
+/* change gradient aside with animation */
+@keyframes asidebg {
+  0% {
+    background: linear-gradient(to top, #f09819, #edde5d);
+  }
+  12.5% {
+    background: linear-gradient(to top, #f09819, #edde5d);
+  }
+  25% {
+    background: linear-gradient(to top, #f953c6, #b91d73);
+  }
+  37.5% {
+    background: linear-gradient(to top, #f953c6, #b91d73);
+  }
+  50% {
+    background: linear-gradient(to top, #f953c6, #b91d73);
+  }
+  62.5% {
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+  }
+  75% {
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+  }
+  87.5% {
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+  }
+  100% {
+    background: linear-gradient(to top, #f09819, #edde5d);
+  }
+}
+
+/* change palce of photo of aside with animation */
+@keyframes imgl {
+  0% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  12.5% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  15% {
+    visibility: hidden;
+    transform: translateX(-160%) scale(0.7);
+  }
+  18% {
+    visibility: hidden;
+    transform: translateX(260%) scale(0.7);
+  }
+  21% {
+    transform: translateX(160%) scale(0.7);
+  }
+  25% {
+    transform: translateX(160%) scale(0.7);
+  }
+  37.5% {
+    transform: translateX(160%) scale(0.7);
+  }
+  50% {
+    transform: translateX(160%) scale(0.7);
+  }
+  62.5% {
+    transform: translateX(50%) scale(1);
+  }
+  75% {
+    transform: translateX(50%) scale(1);
+  }
+  87.5% {
+    transform: translateX(50%) scale(1);
+  }
+  100% {
+    transform: translateX(-60%) scale(0.7);
+  }
+}
+@keyframes imgc {
+  0% {
+    transform: translateX(50%) scale(1);
+  }
+  12.5% {
+    transform: translateX(50%) scale(1);
+  }
+  25% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  37.5% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  50% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  53% {
+    visibility: hidden;
+    transform: translateX(-160%) scale(0.7);
+  }
+  56% {
+    visibility: hidden;
+    transform: translateX(260%) scale(0.7);
+  }
+  59% {
+    transform: translateX(160%) scale(0.7);
+  }
+  62.5% {
+    transform: translateX(160%) scale(0.7);
+  }
+  75% {
+    transform: translateX(160%) scale(0.7);
+  }
+  87.5% {
+    transform: translateX(160%) scale(0.7);
+  }
+  100% {
+    transform: translateX(50%) scale(1);
+  }
+}
+@keyframes imgr {
+  0% {
+    transform: translateX(160%) scale(0.7);
+  }
+  12.5% {
+    transform: translateX(160%) scale(0.7);
+  }
+  25% {
+    transform: translateX(50%) scale(1);
+  }
+  37.5% {
+    transform: translateX(50%) scale(1);
+  }
+  50% {
+    transform: translateX(50%) scale(1);
+  }
+  62.5% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  75% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  87.5% {
+    transform: translateX(-60%) scale(0.7);
+  }
+  90% {
+    visibility: hidden;
+    transform: translateX(-160%) scale(0.7);
+  }
+  93% {
+    visibility: hidden;
+    transform: translateX(260%) scale(0.7);
+  }
+  96% {
+    transform: translateX(160%) scale(0.7);
+  }
+  100% {
+    transform: translateX(160%) scale(0.7);
+  }
+}
+
+/* show which photo is now is showing with animation */
+@keyframes spanl {
+  0% {
+    background-color: #c9b4dc;
+  }
+  12.5% {
+    background-color: #c9b4dc;
+  }
+  25% {
+    background-color: #c9b4dc;
+  }
+  37.5% {
+    background-color: #c9b4dc;
+  }
+  50% {
+    background-color: #c9b4dc;
+  }
+  62.5% {
+    background-color: #9d77cb;
+  }
+  75% {
+    background-color: #9d77cb;
+  }
+  87.5% {
+    background-color: #9d77cb;
+  }
+  100% {
+    background-color: #c9b4dc;
+  }
+}
+@keyframes spanc {
+  0% {
+    background-color: #9d77cb;
+  }
+  12.5% {
+    background-color: #9d77cb;
+  }
+  25% {
+    background-color: #c9b4dc;
+  }
+  37.5% {
+    background-color: #c9b4dc;
+  }
+  50% {
+    background-color: #c9b4dc;
+  }
+  62.5% {
+    background-color: #c9b4dc;
+  }
+  75% {
+    background-color: #c9b4dc;
+  }
+  87.5% {
+    background-color: #c9b4dc;
+  }
+  100% {
+    background-color: #9d77cb;
+  }
+}
+@keyframes spanr {
+  0% {
+    background-color: #c9b4dc;
+  }
+  12.5% {
+    background-color: #c9b4dc;
+  }
+  25% {
+    background-color: #9d77cb;
+  }
+  37.5% {
+    background-color: #9d77cb;
+  }
+  50% {
+    background-color: #9d77cb;
+  }
+  62.5% {
+    background-color: #c9b4dc;
+  }
+  75% {
+    background-color: #c9b4dc;
+  }
+  87.5% {
+    background-color: #c9b4dc;
+  }
+  100% {
+    background-color: #c9b4dc;
+  }
+}
+
+/* media for img in small screen */
+@media screen and (max-width: 425px) {
+  aside img {
+    height: 220px;
+  }
+}
+@media screen and (min-width: 425px) {
+  aside img {
+    height: 280px;
+  }
+}
