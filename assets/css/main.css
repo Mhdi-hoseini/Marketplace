@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+main {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-flow: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+main h1 {
+  margin: 0;
+  padding: 0;
+  color: #faf7fc;
+  font-size: 56px;
+}
+main p {
+  margin: 4px;
+  color: #8c868c;
+  line-height: 26px;
+}
+main form {
+  position: relative;
+}
+main input[type="email"] {
+  position: absolute;
+  width: 96%;
+  height: 46px;
+  padding: 0 2%;
+  border: none;
+  border-radius: 5px;
+  background-color: #faf7fc;
+  font-family: inherit;
+}
+main input[type="email"]:focus {
+  outline: 2px solid #ab95e3;
+}
+main input[type="email"]::placeholder {
+  color: #2b252c;
+}
+main button {
+  position: absolute;
+  right: 1px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  color: #faf7fc;
+  background: linear-gradient(
+    180deg,
+    rgba(172, 149, 229, 1) 0%,
+    rgba(212, 163, 218, 1) 50%
+  );
+  transform: translateY(2px);
+  cursor: pointer;
+  font-family: inherit;
+}
